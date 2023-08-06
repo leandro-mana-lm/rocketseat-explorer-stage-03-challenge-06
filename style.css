@@ -1,0 +1,172 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #efefef;
+}
+
+.container::before {
+  background: #535971;
+
+  content: '';
+
+  height: 436px;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.container {
+  margin: auto;
+
+  width: 750px;
+}
+
+header {
+  color: #ffffff;
+
+  margin-top: 140px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 20px;
+
+  margin-bottom: 58px;
+
+  width: 417px;
+}
+
+form {
+  background: #ffffff;
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+fieldset + fieldset {
+  margin-top: 32px;
+}
+
+legend {
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+}
+
+.line {
+  border: 1px solid #e6e6f0;
+
+  margin: 8px 0 32px;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.datetime-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  margin-bottom: 16px;
+}
+
+.time-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 100%;
+}
+
+span {
+  color: #c1bccc;
+  font-size: 12px;
+}
+
+label {
+  color: #4e4958;
+  font-size: 14px;
+}
+
+input {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 20px;
+}
+
+footer {
+  background: #535971;
+
+  border-radius: 0 0 20px 20px;
+
+  height: 160px;
+
+  margin-bottom: 366px;
+}
+
+button {
+  background: #ff5374;
+
+  border: none;
+  border-radius: 20px;
+
+  color: #ffffff;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+
+  height: 55px;
+  width: 608px;
+
+  margin: 52px 71px;
+
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #f96280;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
